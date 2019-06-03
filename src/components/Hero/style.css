@@ -1,19 +1,17 @@
 .header {
   background-color: grey;
-  min-height: 400px;
-  padding: 180px 20px;
-  padding-bottom: 140px;
+  padding: 200px 20px;
+  padding-bottom: 160px;
 }
 
 .header-text {
   color: white;
-  margin-bottom: 20px;
 }
 
 h1.header-text {
-  font-size: 75px;
+  font-size: 65px;
 }
 
 h3.header-text {
-  font-size: 30px;
+  font-size: 20px;
 }

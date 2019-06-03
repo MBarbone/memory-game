@@ -1,0 +1,6 @@
+.footer {
+  background: lightgrey;
+  height: 100px;
+  position: relative;
+  overflow: auto;
+}
