@@ -21,3 +21,8 @@
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   cursor: pointer;
 }
+
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.1s;
+}
