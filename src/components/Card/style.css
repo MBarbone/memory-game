@@ -23,8 +23,8 @@
   transition: 0.1s;
 }
 
-img {
+.img-fluid {
   height: 170px;
   width: 170px;
-  object-fit: cover no repeat;
+  object-fit: cover;
 }

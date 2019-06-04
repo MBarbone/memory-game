@@ -1,22 +1,30 @@
 import React from "react";
 import "./style.css";
 
-export default class Header extends React.Component {
-  state = {};
-
-  render() {
-    return (
-      <div>
-        <div className="navbar">
-          <ul>
-            <li>
-              <a href="#home">Memory Game</a>
-            </li>
-            <li>Click an Image to Begin</li>
-            <li>Score: 0 | Top High Score: 0</li>
-          </ul>
-        </div>
+export default function Navbar(props) {
+  return (
+    <div>
+      <div className="navbar">
+        <ul>
+          <li>
+            <a href="/">Memory Game</a>
+          </li>
+          <li
+            className={
+              props.message.indexOf("Wrong") !== -1
+                ? "incorrectMessage"
+                : props.message.indexOf("Right") !== -1
+                ? "correctMessage"
+                : "normalMessage"
+            }
+          >
+            {props.message}
+          </li>
+          <li>
+            Score: {props.score} | Top Score: {props.topScore}
+          </li>
+        </ul>
       </div>
-    );
-  }
+    </div>
+  );
 }
