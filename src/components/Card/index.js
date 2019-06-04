@@ -3,16 +3,10 @@ import "./style.css";
 
 export default function Card(props) {
   return (
-    <div>
-      <div className="container">
-        <div className="card">
-          <img
-            src={require("../../img/" + props.imageUrl)}
-            className="img-fluid"
-            alt={props.imageUrl}
-          />
-        </div>
-      </div>
-    </div>
+    <img
+      src={require("../../img/" + props.imageUrl)}
+      className="img-fluid img-thumbnail"
+      alt={props.imageUrl}
+    />
   );
 }

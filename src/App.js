@@ -2,6 +2,7 @@ import React from "react";
 import { Component } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import CardContainer from "./components/CardContainer";
 import Card from "./components/Card";
 import Footer from "./components/Footer";
 import images from "./img/images.json";
@@ -69,14 +70,16 @@ export default class App extends Component {
           message={this.state.message}
         />
         <Hero />
-        {this.state.images.map(image => (
-          <Card
-            id={image.id}
-            key={image.id}
-            imageUrl={image.imageUrl}
-            guessImage={this.guessImage}
-          />
-        ))}
+        <CardContainer>
+          {this.state.images.map(image => (
+            <Card
+              id={image.id}
+              key={image.id}
+              imageUrl={image.imageUrl}
+              guessImage={this.guessImage}
+            />
+          ))}
+        </CardContainer>
         <Footer />
       </div>
     );
