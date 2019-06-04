@@ -13,7 +13,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             alt="Github Link"
           >
-            <i class="fa fa-github fa-3x" aria-hidden="true" />
+            <i className="fa fa-github fa-3x" aria-hidden="true" />
           </a>
         </div>
       </div>

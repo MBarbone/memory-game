@@ -1,7 +1,9 @@
 .footer {
   background: #1e5cb9;
   height: 50px;
-  vertical-align: middle;
+  left: "0";
+  bottom: "0";
+  width: "100%";
 }
 
 #footer-text {
