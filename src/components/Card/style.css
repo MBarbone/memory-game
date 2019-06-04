@@ -9,10 +9,6 @@
 }
 
 .card {
-  background-size: cover;
-  background-position: 50%;
-  height: 170px;
-  width: 170px;
   margin: 15px 25px;
   border: 5px solid #f1f1f1;
   border-radius: 3px;
@@ -25,4 +21,10 @@
 .card:hover {
   transform: scale(1.05);
   transition: 0.1s;
+}
+
+img {
+  height: 170px;
+  width: 170px;
+  object-fit: cover no repeat;
 }
