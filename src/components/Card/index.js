@@ -7,6 +7,7 @@ export default function Card(props) {
       src={require("../../img/" + props.imageUrl)}
       className="img-fluid img-thumbnail"
       alt={props.imageUrl}
+      onClick={() => props.guessImage(props.id)}
     />
   );
 }
